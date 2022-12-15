@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>scaner</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+<ion-button (click)="startScan()" expand="full" >
+  <ion-icon name="scan"></ion-icon>
+  Scanear
+</ion-button>
+
+<p class="ion-text-center">{{result}}</p>
+
+<ion-row >
+  <ion-col class="ion-no-paddgin">
+    <ion-button expand="full" (click)="stopScan()">Stop</ion-button>
+  </ion-col>
+</ion-row>
+<div class="scan-box" ></div>
+</ion-content>

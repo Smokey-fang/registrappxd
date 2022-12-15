@@ -1,0 +1,36 @@
+ion-toolbar{
+  --background: #ebad35
+}
+
+ion-content{
+  --background: rgb(32,6,212);
+  --background: radial-gradient(circle, rgba(32,6,212,1) 39%, rgba(16,118,186,1) 54%);
+
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+}

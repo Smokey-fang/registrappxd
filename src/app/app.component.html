@@ -1,0 +1,49 @@
+<ion-app >
+  <ion-router-outlet>
+    <ion-menu contentId="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Menu </ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding" >
+          <ion-menu-toggle *ngIf="login">
+            <ion-item detail routerLink="/home" (click)="cerrarMenu()" color="warning">
+              <ion-icon slot="start" name="home-outline"></ion-icon>
+              Home
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle *ngIf="login">
+            <ion-item detail routerLink="/asignaturas" (click)="cerrarMenu()" color="warning">
+              <ion-icon slot="start" name="list-outline"></ion-icon>
+              Asignaturas
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle *ngIf="login">
+            <ion-item detail routerLink="/scaner" (click)="cerrarMenu()" color="warning">
+              <ion-icon slot="start" name="qr-code-outline"></ion-icon>
+              Escaner Qr
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle *ngIf="login">
+            <ion-item detail="true" (click)="logout()" color="warning">
+              <ion-icon slot="start" name="log-out-outline"></ion-icon>
+              Cerrar Sesion
+            </ion-item>
+          </ion-menu-toggle>
+      </ion-content>  
+    </ion-menu>
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+      </ion-content>
+    </div>
+  </ion-router-outlet>
+</ion-app>
